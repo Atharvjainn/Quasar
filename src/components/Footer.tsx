@@ -8,8 +8,8 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="font-display text-xl font-bold text-gradient flex items-center gap-2 justify-center md:justify-start">
-              <img src="/logo.svg" alt="Quasar x AI" className="w-8 h-8 md:w-10 md:h-10" />
-              Quasar x <span className="text-accent">AI 2026</span>
+              <img src="/logo.jpeg" alt="Quasar x AI" className="w-15 h-20" />
+             
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © 2026 Quasar x AI. All rights reserved.
