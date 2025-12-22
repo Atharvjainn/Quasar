@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Schedule from "@/components/Schedule";
+import Team from "@/components/Team";
 import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <About />
       <Schedule />
+      <Team />
       <Registration />
       <Footer />
       <Chatbot />
