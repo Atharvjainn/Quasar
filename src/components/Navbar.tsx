@@ -35,7 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20 mt-2 md:pt-0 ">
+        <div className="flex items-center justify-between h-16 md:h-20 ">
           {/* Logo */}
           <a
             href="#"
@@ -45,7 +45,7 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <img src="/logo.png" alt="Quasar x AI" className="w-15 h-20" />
+            <img src="/logo.png" alt="Quasar x AI" className="w-15 h-12 md:w-15 md:h-20" />
           </a>
 
           {/* Desktop Navigation */}
