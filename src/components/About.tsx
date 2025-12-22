@@ -43,7 +43,7 @@ const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6">
             What is <span className="text-gradient">Quasar x AI 2026</span>?
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -71,7 +71,7 @@ const About = () => {
 
         {/* Highlights */}
         <div className="mb-8">
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-center mb-10">
+          <h3 className="font-display text-4xl sm:text-5xl font-bold text-center mb-10">
             Event Highlights
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
