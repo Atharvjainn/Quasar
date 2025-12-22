@@ -1,37 +1,37 @@
 import { Brain, Globe, Cpu, Code, Users, Trophy, Clock } from "lucide-react";
 
-const tracks = [
+const highlights = [
   {
     icon: Brain,
-    title: "AI / ML",
-    description: "Build intelligent applications using machine learning and artificial intelligence.",
+    title: "AI-Powered Projects",
+    description: "Build innovative applications using machine learning, LLMs, and artificial intelligence.",
     color: "text-primary",
   },
   {
-    icon: Globe,
-    title: "Web3 / Blockchain",
-    description: "Create decentralized apps and explore the future of the internet.",
+    icon: Code,
+    title: "24-Hour Sprint",
+    description: "Intense coding marathon from 10 AM Jan 24 to 10 AM Jan 25, 2026.",
     color: "text-glow-secondary",
   },
   {
     icon: Cpu,
-    title: "Hardware / IoT",
-    description: "Connect the physical world with smart devices and embedded systems.",
+    title: "Learn & Build",
+    description: "Get hands-on experience with cutting-edge AI tools and frameworks.",
     color: "text-accent",
   },
   {
-    icon: Code,
-    title: "General Coding",
-    description: "Build anything you can imagine with your favorite tech stack.",
+    icon: Globe,
+    title: "Connect & Collaborate",
+    description: "Network with fellow AI enthusiasts and industry mentors.",
     color: "text-primary",
   },
 ];
 
 const stats = [
-  { icon: Users, value: "500+", label: "Participants" },
-  { icon: Trophy, value: "$50K", label: "In Prizes" },
-  { icon: Clock, value: "48", label: "Hours" },
-  { icon: Code, value: "4", label: "Tracks" },
+  { icon: Users, value: "100+", label: "Students" },
+  { icon: Trophy, value: "₹15K", label: "Prize Pool" },
+  { icon: Clock, value: "24", label: "Hours" },
+  { icon: Brain, value: "AI", label: "Theme" },
 ];
 
 const About = () => {
@@ -44,12 +44,12 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            What is <span className="text-gradient">Hackathon 2025</span>?
+            What is <span className="text-gradient">Quasar x AI 2026</span>?
           </h2>
           <p className="text-lg text-muted-foreground">
-            A 48-hour innovation marathon where developers, designers, and dreamers come together 
-            to build groundbreaking projects across four exciting tracks. Whether you're a seasoned 
-            pro or just starting out, there's a place for you here.
+            A 24-hour AI innovation marathon where students come together to build groundbreaking 
+            AI-powered projects. Whether you're a seasoned developer or just starting your AI journey, 
+            there's a place for you here. <span className="font-semibold text-foreground">#LetsDiveIn</span>
           </p>
         </div>
 
@@ -69,22 +69,22 @@ const About = () => {
           ))}
         </div>
 
-        {/* Tracks */}
+        {/* Highlights */}
         <div className="mb-8">
           <h3 className="font-display text-2xl md:text-3xl font-bold text-center mb-10">
-            Competition Tracks
+            Event Highlights
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {tracks.map((track) => (
+            {highlights.map((item) => (
               <div
-                key={track.title}
+                key={item.title}
                 className="glass rounded-2xl p-6 hover:scale-105 transition-all duration-300 group"
               >
-                <div className={`w-14 h-14 rounded-xl bg-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform ${track.color}`}>
-                  <track.icon className="w-7 h-7" />
+                <div className={`w-14 h-14 rounded-xl bg-muted flex items-center justify-center mb-4 group-hover:scale-110 transition-transform ${item.color}`}>
+                  <item.icon className="w-7 h-7" />
                 </div>
-                <h4 className="font-display text-xl font-semibold mb-2">{track.title}</h4>
-                <p className="text-muted-foreground text-sm">{track.description}</p>
+                <h4 className="font-display text-xl font-semibold mb-2">{item.title}</h4>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </div>
             ))}
           </div>

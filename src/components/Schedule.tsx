@@ -2,45 +2,45 @@ import { Calendar, MapPin, CheckCircle } from "lucide-react";
 
 const scheduleItems = [
   {
-    date: "Jan 15, 2025",
-    title: "Registration Opens",
-    description: "Sign up and secure your spot in the hackathon.",
-    time: "12:00 PM",
-    completed: true,
-  },
-  {
-    date: "Jan 20, 2025",
-    title: "Team Formation",
-    description: "Find teammates or register as a solo participant.",
-    time: "All Day",
+    date: "Jan 5-10, 2026",
+    title: "Registration Period",
+    description: "Sign up and secure your spot in Quasar x AI 2026.",
+    time: "Open All Days",
     completed: false,
   },
   {
-    date: "Feb 1, 2025",
+    date: "Jan 15-18, 2026",
+    title: "Round 1 - Screening",
+    description: "Initial screening round to select participants for the main hackathon.",
+    time: "Online",
+    completed: false,
+  },
+  {
+    date: "Jan 24, 2026",
     title: "Hackathon Kickoff",
-    description: "Opening ceremony, rules announcement, and hacking begins!",
-    time: "9:00 AM",
+    description: "Opening ceremony, rules announcement, and 24-hour hacking begins!",
+    time: "10:00 AM",
     completed: false,
   },
   {
-    date: "Feb 2, 2025",
-    title: "Workshops & Mentoring",
-    description: "Learn from industry experts and get guidance on your projects.",
-    time: "Throughout the day",
+    date: "Jan 25, 2026",
+    title: "Coding Ends",
+    description: "Final project submissions - stop coding and prepare for demos.",
+    time: "10:00 AM",
     completed: false,
   },
   {
-    date: "Feb 3, 2025",
-    title: "Submissions Due",
-    description: "Final project submissions and demo videos.",
-    time: "9:00 AM",
+    date: "Jan 25, 2026",
+    title: "Judging & Lunch",
+    description: "Project presentations and judging while enjoying lunch.",
+    time: "11:00 AM - 3:00 PM",
     completed: false,
   },
   {
-    date: "Feb 3, 2025",
-    title: "Judging & Winners",
-    description: "Project presentations, judging, and award ceremony.",
-    time: "2:00 PM",
+    date: "Jan 25, 2026",
+    title: "Awards Ceremony",
+    description: "Winners announcement and prize distribution. #LetsDiveIn",
+    time: "4:00 PM - 5:00 PM",
     completed: false,
   },
 ];
@@ -63,11 +63,11 @@ const Schedule = () => {
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           <div className="glass rounded-full px-6 py-3 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-primary" />
-            <span className="text-sm font-medium">February 1-3, 2025</span>
+            <span className="text-sm font-medium">January 24-25, 2026</span>
           </div>
           <div className="glass rounded-full px-6 py-3 flex items-center gap-2">
             <MapPin className="w-5 h-5 text-accent" />
-            <span className="text-sm font-medium">Virtual Event - Worldwide</span>
+            <span className="text-sm font-medium">24-Hour AI Hackathon</span>
           </div>
         </div>
 

@@ -10,10 +10,9 @@ const Hero = () => {
     seconds: 0,
   });
 
-  // Countdown to a future date (e.g., 30 days from now for demo)
+  // Countdown to hackathon start: Jan 24, 2026 at 10:00 AM
   useEffect(() => {
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
+    const targetDate = new Date("2026-01-24T10:00:00");
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -53,21 +52,23 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground mb-8 animate-fade-in-up">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">AI • Web3 • Hardware • General Coding</span>
+            <span className="text-sm font-medium">24-Hour AI Hackathon • January 24-25, 2026</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Build the{" "}
-            <span className="text-gradient">Future</span>
+            <span className="text-gradient">Quasar</span> x{" "}
+            <span className="text-gradient">AI</span>
             <br />
-            at Hackathon 2025
+            2026
           </h1>
 
           {/* Tagline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Join thousands of developers, designers, and innovators for 48 hours of building, 
-            learning, and pushing the boundaries of technology.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Join 100+ students for 24 hours of building, learning, and pushing the boundaries of AI.
+          </p>
+          <p className="text-2xl md:text-3xl font-display font-bold text-gradient mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            #LetsDiveIn
           </p>
 
           {/* CTA Buttons */}
