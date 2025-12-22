@@ -94,7 +94,7 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="font-display text-7xl sm:text-8xl font-bold mb-6 animate-fade-in-up">
             <span className="text-gradient">Quasar</span> x{" "}
             <span className="text-gradient">AI</span>
             <br />
@@ -168,7 +168,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 max-lg:hidden">
         <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-muted-foreground/50 rounded-full animate-scroll-indicator" />
         </div>

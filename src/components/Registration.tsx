@@ -77,7 +77,7 @@ const Registration = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6">
             Join the <span className="text-gradient">Revolution</span>
           </h2>
           <p className="text-lg text-muted-foreground">

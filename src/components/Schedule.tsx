@@ -83,7 +83,7 @@ const Schedule = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-display text-5xl md:text-6xl font-bold mb-6">
             Event <span className="text-gradient">Schedule</span>
           </h2>
           <p className="text-lg text-muted-foreground">
