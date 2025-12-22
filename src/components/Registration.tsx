@@ -90,14 +90,14 @@ const Registration = () => {
         <div className="max-w-lg mx-auto">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="glass rounded-2xl p-8 glow-border"
+            className="glass rounded-2xl p-8"
           >
             <div className="space-y-6">
               {/* Submit Button */}
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg glow-border"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 {isSubmitting ? (
                   "Registering..."

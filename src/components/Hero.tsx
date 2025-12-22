@@ -116,7 +116,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={scrollToRegister}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg glow-border transition-all duration-300 hover:scale-105 active:scale-95"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Register Now
               <ArrowRight className="ml-2 w-5 h-5" />
