@@ -39,13 +39,16 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#"
-            className="font-display text-xl md:text-2xl font-bold text-gradient"
+            className="font-display text-xl md:text-2xl font-bold flex items-center gap-1"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            HACKATHON<span className="text-accent">2025</span>
+            <span className="text-gradient">Quasar</span>
+            <span className="text-foreground">x</span>
+            <span className="text-gradient">AI</span>
+            <span className="text-accent font-mono text-lg">2026</span>
           </a>
 
           {/* Desktop Navigation */}
