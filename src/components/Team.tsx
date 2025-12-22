@@ -23,7 +23,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/atull-pandeyy",
   },
   {
-    name: "Atharva Jain",
+    name: "Atharv Jain",
     role: "Developer",
     image: "https://res.cloudinary.com/dlmfnwkon/image/upload/ajj_jnz8qo.jpg",
     instagram: "https://www.instagram.com/atharvjain21",
