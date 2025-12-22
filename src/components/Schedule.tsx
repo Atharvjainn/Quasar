@@ -55,27 +55,46 @@ const Schedule = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    let animationFrameId: number;
+    let ticking = false;
+
     const handleScroll = () => {
       if (!timelineRef.current) return;
 
       const rect = timelineRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
+      const triggerPoint = windowHeight * 0.7; // Line follows from 70% of viewport
 
-      const totalHeight = rect.height;
-      const visibleHeight = windowHeight - rect.top;
+      // Calculate how far into the timeline we've scrolled
+      const startPoint = rect.top - triggerPoint;
+      const endPoint = rect.bottom - triggerPoint;
+      const totalDistance = rect.height;
 
-      const scrollPercent = Math.min(
-        Math.max(visibleHeight / totalHeight, 0),
-        1
-      );
+      let scrollPercent = 0;
+      
+      if (startPoint <= 0) {
+        // We've started scrolling into the timeline
+        scrollPercent = Math.min(Math.abs(startPoint) / totalDistance, 1);
+      }
 
       setProgress(scrollPercent * 100);
+      ticking = false;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const onScroll = () => {
+      if (!ticking) {
+        animationFrameId = requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   return (
@@ -116,7 +135,7 @@ const Schedule = () => {
 
             {/* Scroll Progress Line */}
             <div
-              className="absolute left-4 md:left-1/2 top-0 w-px bg-gradient-to-b from-green-400 to-emerald-600 transition-all duration-300"
+              className="absolute left-4 md:left-1/2 top-0 w-px bg-gradient-to-b from-green-400 to-emerald-600 will-change-transform"
               style={{ height: `${progress}%` }}
             />
 
