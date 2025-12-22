@@ -53,10 +53,8 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const scrollToRegister = () => {
-    document
-      .querySelector("#register")
-      ?.scrollIntoView({ behavior: "smooth" });
+  const openRegistration = () => {
+    window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank");
   };
 
   return (
@@ -115,7 +113,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button
               size="lg"
-              onClick={scrollToRegister}
+              onClick={openRegistration}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Register Now
