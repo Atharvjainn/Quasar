@@ -93,20 +93,14 @@ const Registration = () => {
             className="glass rounded-2xl p-8"
           >
             <div className="space-y-6">
-              {/* Submit Button */}
+              {/* Register Button */}
               <Button
-                type="submit"
-                disabled={isSubmitting}
+                type="button"
+                onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
               >
-                {isSubmitting ? (
-                  "Registering..."
-                ) : (
-                  <>
-                    <Rocket className="w-5 h-5 mr-2" />
-                    Register Now
-                  </>
-                )}
+                <Rocket className="w-5 h-5 mr-2" />
+                Register Now
               </Button>
             </div>
           </form>
