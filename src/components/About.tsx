@@ -31,7 +31,7 @@ const stats = [
   { icon: Users, value: "100+", label: "Students" },
   { icon: Trophy, value: "₹15K", label: "Prize Pool" },
   { icon: Clock, value: "24", label: "Hours" },
-  { icon: Brain, value: "AI", label: "Theme" },
+  { icon: Brain, value: "AI & Gen AI", label: "Theme" },
 ];
 
 const About = () => {
