@@ -39,12 +39,13 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#"
-            className="font-display text-xl md:text-2xl font-bold flex items-center gap-1"
+            className="font-display text-xl md:text-2xl font-bold flex items-center gap-2"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
+            <img src="/logo.svg" alt="Quasar x AI" className="w-8 h-8 md:w-10 md:h-10" />
             <span className="text-gradient">Quasar</span>
             <span className="text-foreground">x</span>
             <span className="text-gradient">AI</span>
