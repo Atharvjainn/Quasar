@@ -49,7 +49,7 @@ const faqItems = [
   {
     question: "What are the prizes?",
     answer:
-      "We have a total prize pool of ₹15,000! 1st place: ₹6,000, 2nd place: ₹4,000, 3rd place: ₹2,000. The remaining ₹3,000 will be distributed as track-based prizes along with certificates and goodies.",
+      "We have a total prize pool of ₹15,000! 1st place: ₹6,000, 2nd place: ₹4,000, 3rd place: ₹3,000. The remaining ₹2,000 will be distributed as track-based prizes along with certificates and goodies.",
   },
   {
     question: "What should I bring to the final round?",
