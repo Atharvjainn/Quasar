@@ -47,7 +47,7 @@ const About = () => {
             What is <span className="text-gradient">Quasar x AI 2026</span>?
           </h2>
           <p className="text-lg text-muted-foreground">
-            A 24-hour AI innovation marathon where students come together to build groundbreaking 
+            A 24-hour AI innovation marathon hosted by <span className="font-semibold text-foreground">IIIT Ranchi</span> where students come together to build groundbreaking 
             AI-powered projects. Whether you're a seasoned developer or just starting your AI journey, 
             there's a place for you here. <span className="font-semibold text-foreground">#LetsDiveIn</span>
           </p>

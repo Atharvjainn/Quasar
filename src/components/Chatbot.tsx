@@ -9,29 +9,34 @@ interface Message {
 }
 
 const faqResponses: Record<string, string> = {
-  "when": "Quasar x AI 2026 is a 24-hour hackathon from January 24th (10 AM) to January 25th (10 AM), 2026!",
-  "date": "The hackathon runs from January 24th 10 AM to January 25th 10 AM, 2026. Registration is Jan 5-10, Round 1 is Jan 15-18!",
-  "where": "Quasar x AI 2026 is an in-person event. Location details will be shared after registration!",
-  "location": "Location details will be shared with registered participants. Stay tuned!",
-  "register": "Registration opens January 5th and closes January 10th, 2026. Click the 'Register Now' button to sign up!",
-  "sign up": "Registration is open from January 5-10, 2026. Scroll to the registration section or click 'Register Now'!",
-  "cost": "Quasar x AI 2026 is completely FREE to participate in!",
-  "free": "Yes! Quasar x AI 2026 is completely FREE to participate in!",
-  "price": "Quasar x AI 2026 is completely FREE to participate in!",
-  "prize": "We have a total prize pool of ₹15,000! Prizes will be awarded to top teams after the judging session.",
-  "prizes": "Total prize pool is ₹15,000! Winners will be announced at the awards ceremony on January 25th, 4-5 PM.",
-  "team": "Teams can have 1-4 members. Around 100 students are expected to participate!",
-  "theme": "The theme is AI! Build innovative AI-powered solutions during the 24-hour hackathon.",
-  "ai": "The theme is Artificial Intelligence! Create innovative AI solutions, ML models, or AI-powered applications.",
-  "schedule": "Registration: Jan 5-10 | Round 1: Jan 15-18 | Hackathon: Jan 24 (10AM) - Jan 25 (10AM) | Judging: 11AM-3PM | Awards: 4-5PM",
-  "round": "Round 1 (screening) is from January 15-18. Selected teams proceed to the main hackathon on January 24-25!",
-  "judging": "Judging takes place on January 25th from 11 AM to 3 PM, followed by lunch. Awards ceremony is 4-5 PM!",
-  "rules": "Key rules: Projects must be AI-themed, teams of 1-4 people, 24-hour build time. Full rules shared at kickoff!",
-  "help": "I can answer questions about dates, registration, prizes, teams, theme, schedule, and more. What would you like to know?",
-  "hello": "Hello! 👋 I'm the Quasar x AI 2026 assistant. #LetsDiveIn - How can I help you today?",
-  "hi": "Hi there! 👋 Welcome to Quasar x AI 2026! #LetsDiveIn - What would you like to know?",
-  "tagline": "Our tagline is #LetsDiveIn! Join us for an exciting 24-hour AI hackathon!",
-  "letsdivein": "#LetsDiveIn is our tagline! It represents diving deep into AI innovation together!",
+  "when": "Quasar x AI 2026 has two rounds! Round 1 (PPT submission) is Jan 15-18, 2026. Round 2 (final) is a 24-hour hackathon on Jan 24-25, 2026 at IIIT Ranchi Campus.",
+  "date": "Round 1 PPT submission: Jan 15-18, 2026. Round 2 final: Jan 24-25, 2026 at IIIT Ranchi Campus. Registration: Jan 5-10, 2026.",
+  "where": "The final round takes place at IIIT Ranchi Campus on January 24-25, 2026. Round 1 is PPT submission online.",
+  "venue": "The final hackathon (Round 2) will be held at IIIT Ranchi Campus on January 24-25, 2026. The event is hosted by IIIT Ranchi!",
+  "location": "The final round is at IIIT Ranchi Campus. Round 1 is online PPT submission.",
+  "iiit": "Quasar x AI 2026 is hosted by IIIT Ranchi! The final 24-hour hackathon takes place at IIIT Ranchi Campus on January 24-25, 2026.",
+  "ranchi": "The hackathon is hosted by IIIT Ranchi! The final round takes place at IIIT Ranchi Campus.",
+  "host": "Quasar x AI 2026 is proudly hosted by IIIT Ranchi! The final round will be held at their campus.",
+  "register": "You can register by scrolling down to the registration section. Registration is open from Jan 5-10, 2026. Fee is ₹500 per team.",
+  "sign up": "Scroll down to the registration section to sign up! Registration fee is ₹500 per team (2-4 members).",
+  "cost": "The registration fee is ₹500 per team (not per person). Teams can have 2-4 members.",
+  "fee": "The registration fee is ₹500 per team. This covers your entire team of 2-4 members.",
+  "price": "Registration costs ₹500 per team (2-4 members).",
+  "prize": "Prize pool of ₹15,000! 1st place: ₹6,000, 2nd place: ₹4,000, 3rd place: ₹2,000, plus ₹3,000 for track-based awards!",
+  "prizes": "Total prize pool: ₹15,000! 1st: ₹6,000 | 2nd: ₹4,000 | 3rd: ₹2,000 | Track prizes: ₹3,000. Plus certificates and goodies!",
+  "team": "Teams must have 2-4 members. Solo participation is not allowed. Registration fee is ₹500 per team.",
+  "member": "Each team should have 2-4 members. Solo participation is not allowed as we encourage collaboration!",
+  "round": "There are 2 rounds! Round 1 (Jan 15-18): Submit a PPT of your project idea. Shortlisted teams compete in Round 2, the 24-hour final at IIIT Ranchi (Jan 24-25).",
+  "rounds": "Round 1: PPT submission (Jan 15-18) - present your AI project idea. Round 2: 24-hour hackathon at IIIT Ranchi Campus (Jan 24-25) for shortlisted teams.",
+  "ppt": "Round 1 requires PPT submission! Include team details, problem statement, AI-based solution, tech stack, and expected outcomes. Selection is based on your PPT.",
+  "presentation": "For Round 1, submit a PPT with your project idea, problem statement, proposed AI solution, and tech stack. Teams are shortlisted based on their presentations.",
+  "selection": "Selection for Round 2 is based on your Round 1 PPT submission. Focus on innovation, feasibility, and how you integrate AI into your solution.",
+  "ai": "This is an AI-based hackathon hosted by IIIT Ranchi! Your projects should incorporate AI/ML technologies.",
+  "theme": "The theme is AI! Build projects using machine learning, deep learning, LLMs, or any AI technology.",
+  "rules": "Key rules: Teams of 2-4, ₹500 fee, Round 1 is PPT submission, Round 2 is 24-hour coding at IIIT Ranchi. Projects must use AI/ML!",
+  "help": "I can answer questions about dates, rounds, PPT submission, registration, fees, prizes, teams, venue, and more. What would you like to know?",
+  "hello": "Hello! 👋 I'm the Quasar x AI 2026 assistant. This hackathon is hosted by IIIT Ranchi! Ask me about registration, rounds, PPT submission, or anything else!",
+  "hi": "Hi there! 👋 Quasar x AI 2026 is hosted by IIIT Ranchi. Ask about fees, rounds (PPT + final), prizes, or anything else!",
 };
 
 const getResponse = (message: string): string => {
@@ -51,7 +56,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! 👋 I'm the Quasar x AI 2026 assistant. #LetsDiveIn - Ask me about dates, registration, prizes, theme, and more!",
+      content: "Hi! 👋 I'm the Quasar x AI 2026 assistant. Ask me about registration (₹500/team), rounds, prizes (₹15,000 pool), venue (IIIT Ranchi), or anything else!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -113,8 +118,8 @@ const Chatbot = () => {
                 <Bot className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">Quasar x AI Assistant</h3>
-                <p className="text-xs opacity-80">#LetsDiveIn</p>
+                <h3 className="font-semibold">Quasar AI Assistant</h3>
+                <p className="text-xs opacity-80">Ask me anything!</p>
               </div>
             </div>
             <button
