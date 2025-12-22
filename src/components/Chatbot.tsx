@@ -9,27 +9,29 @@ interface Message {
 }
 
 const faqResponses: Record<string, string> = {
-  "when": "Hackathon 2025 takes place from February 1-3, 2025. It's a 48-hour virtual event!",
-  "date": "Hackathon 2025 takes place from February 1-3, 2025. It's a 48-hour virtual event!",
-  "where": "This is a fully virtual event! You can participate from anywhere in the world.",
-  "virtual": "This is a fully virtual event! You can participate from anywhere in the world.",
-  "location": "This is a fully virtual event! You can participate from anywhere in the world.",
-  "register": "You can register by scrolling down to the registration section or clicking the 'Register Now' button in the navigation. Registration is free!",
-  "sign up": "You can register by scrolling down to the registration section or clicking the 'Register Now' button in the navigation. Registration is free!",
-  "cost": "Hackathon 2025 is completely FREE to participate in!",
-  "free": "Yes! Hackathon 2025 is completely FREE to participate in!",
-  "price": "Hackathon 2025 is completely FREE to participate in!",
-  "prize": "We have over $50,000 in prizes across all tracks! Prizes include cash, swag, and opportunities with our sponsor companies.",
-  "prizes": "We have over $50,000 in prizes across all tracks! Prizes include cash, swag, and opportunities with our sponsor companies.",
-  "team": "Teams can have 1-4 members. If you don't have a team, select 'Looking for a team' when registering and we'll help you find teammates!",
-  "tracks": "We have 4 tracks: AI/ML, Web3/Blockchain, Hardware/IoT, and General Coding. You can choose your track during registration.",
-  "ai": "The AI/ML track focuses on building intelligent applications using machine learning, deep learning, and artificial intelligence technologies.",
-  "web3": "The Web3/Blockchain track is for building decentralized applications, smart contracts, and exploring blockchain technologies.",
-  "hardware": "The Hardware/IoT track is for projects involving embedded systems, sensors, and connecting the physical world to software.",
-  "rules": "Key rules: Projects must be started during the hackathon, teams of 1-4 people, submissions due by Feb 3rd at 9 AM. Full rules will be shared at kickoff!",
-  "help": "I can answer questions about dates, registration, prizes, teams, tracks, and general hackathon info. What would you like to know?",
-  "hello": "Hello! 👋 I'm the Hackathon 2025 FAQ assistant. How can I help you today?",
-  "hi": "Hi there! 👋 I'm here to answer your questions about Hackathon 2025. What would you like to know?",
+  "when": "Quasar x AI 2026 is a 24-hour hackathon from January 24th (10 AM) to January 25th (10 AM), 2026!",
+  "date": "The hackathon runs from January 24th 10 AM to January 25th 10 AM, 2026. Registration is Jan 5-10, Round 1 is Jan 15-18!",
+  "where": "Quasar x AI 2026 is an in-person event. Location details will be shared after registration!",
+  "location": "Location details will be shared with registered participants. Stay tuned!",
+  "register": "Registration opens January 5th and closes January 10th, 2026. Click the 'Register Now' button to sign up!",
+  "sign up": "Registration is open from January 5-10, 2026. Scroll to the registration section or click 'Register Now'!",
+  "cost": "Quasar x AI 2026 is completely FREE to participate in!",
+  "free": "Yes! Quasar x AI 2026 is completely FREE to participate in!",
+  "price": "Quasar x AI 2026 is completely FREE to participate in!",
+  "prize": "We have a total prize pool of ₹15,000! Prizes will be awarded to top teams after the judging session.",
+  "prizes": "Total prize pool is ₹15,000! Winners will be announced at the awards ceremony on January 25th, 4-5 PM.",
+  "team": "Teams can have 1-4 members. Around 100 students are expected to participate!",
+  "theme": "The theme is AI! Build innovative AI-powered solutions during the 24-hour hackathon.",
+  "ai": "The theme is Artificial Intelligence! Create innovative AI solutions, ML models, or AI-powered applications.",
+  "schedule": "Registration: Jan 5-10 | Round 1: Jan 15-18 | Hackathon: Jan 24 (10AM) - Jan 25 (10AM) | Judging: 11AM-3PM | Awards: 4-5PM",
+  "round": "Round 1 (screening) is from January 15-18. Selected teams proceed to the main hackathon on January 24-25!",
+  "judging": "Judging takes place on January 25th from 11 AM to 3 PM, followed by lunch. Awards ceremony is 4-5 PM!",
+  "rules": "Key rules: Projects must be AI-themed, teams of 1-4 people, 24-hour build time. Full rules shared at kickoff!",
+  "help": "I can answer questions about dates, registration, prizes, teams, theme, schedule, and more. What would you like to know?",
+  "hello": "Hello! 👋 I'm the Quasar x AI 2026 assistant. #LetsDiveIn - How can I help you today?",
+  "hi": "Hi there! 👋 Welcome to Quasar x AI 2026! #LetsDiveIn - What would you like to know?",
+  "tagline": "Our tagline is #LetsDiveIn! Join us for an exciting 24-hour AI hackathon!",
+  "letsdivein": "#LetsDiveIn is our tagline! It represents diving deep into AI innovation together!",
 };
 
 const getResponse = (message: string): string => {
@@ -41,7 +43,7 @@ const getResponse = (message: string): string => {
     }
   }
   
-  return "I'm not sure about that. Try asking about: dates, registration, prizes, teams, tracks, or rules. You can also scroll through the website for more information!";
+  return "I'm not sure about that. Try asking about: dates, registration, prizes, teams, theme, schedule, or rules. You can also scroll through the website for more info!";
 };
 
 const Chatbot = () => {
@@ -49,7 +51,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! 👋 I'm the Hackathon 2025 FAQ assistant. Ask me anything about the event - dates, registration, prizes, tracks, and more!",
+      content: "Hi! 👋 I'm the Quasar x AI 2026 assistant. #LetsDiveIn - Ask me about dates, registration, prizes, theme, and more!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -111,8 +113,8 @@ const Chatbot = () => {
                 <Bot className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">Hackathon Assistant</h3>
-                <p className="text-xs opacity-80">Ask me anything!</p>
+                <h3 className="font-semibold">Quasar x AI Assistant</h3>
+                <p className="text-xs opacity-80">#LetsDiveIn</p>
               </div>
             </div>
             <button
