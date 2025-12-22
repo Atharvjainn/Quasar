@@ -8,10 +8,10 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="font-display text-xl font-bold text-gradient">
-              Quasar x AI <span className="text-accent">2025</span>
+              Quasar x <span className="text-accent">AI 2026</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © 2025 Quasar x AI 2025. All rights reserved.
+              © 2026 Quasar x AI. All rights reserved.
             </p>
           </div>
 
@@ -19,10 +19,10 @@ const Footer = () => {
           <div className="flex items-center gap-2 text-muted-foreground">
             <Mail className="w-4 h-4" />
             <a
-              href="mailto:hello@hackathon2025.com"
+              href="mailto:houseofgeeks@iiitranchi.ac.in"
               className="text-sm hover:text-foreground transition-colors"
             >
-              hello@hackathon2025.com
+              houseofgeeks@iiitranchi.ac.in
             </a>
           </div>
 

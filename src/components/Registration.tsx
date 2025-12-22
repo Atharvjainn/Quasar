@@ -44,7 +44,7 @@ const Registration = () => {
     setIsSubmitted(true);
     toast({
       title: "Registration Successful!",
-      description: "You've been registered for Hackathon 2025. Check your email for confirmation.",
+      description: "You've been registered for Quasar x AI 2026. Check your email for confirmation.",
     });
   };
 
@@ -59,7 +59,7 @@ const Registration = () => {
                 You're Registered!
               </h2>
               <p className="text-muted-foreground">
-                Thank you for registering for Hackathon 2025. We've sent a confirmation 
+                Thank you for registering for Quasar x AI 2026. We've sent a confirmation 
                 email with all the details you need to get started.
               </p>
             </div>
@@ -82,7 +82,7 @@ const Registration = () => {
           </h2>
           <p className="text-lg text-muted-foreground">
             Ready to build something amazing? Register now and secure your spot 
-            in the most exciting hackathon of 2025.
+            in the most exciting AI hackathon of 2026.
           </p>
         </div>
 
