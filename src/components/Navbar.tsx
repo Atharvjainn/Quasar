@@ -46,10 +46,6 @@ const Navbar = () => {
             }}
           >
             <img src="/logo.png" alt="Quasar x AI" className="w-15 h-20" />
-            {/* <span className="text-gradient">Quasar</span>
-            <span className="text-foreground">x</span>
-            <span className="text-gradient">AI</span>
-            <span className="text-accent font-mono text-lg">2026</span> */}
           </a>
 
           {/* Desktop Navigation */}

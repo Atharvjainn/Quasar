@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="font-display text-xl font-bold text-gradient flex items-center gap-2 justify-center md:justify-start">
-              <img src="/logo.jpeg" alt="Quasar x AI" className="w-15 h-20" />
+              <img src="/logo.png" alt="Quasar x AI" className="w-15 h-20" />
              
             </a>
             <p className="text-sm text-muted-foreground mt-2">
