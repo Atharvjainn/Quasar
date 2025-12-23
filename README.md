@@ -1,4 +1,4 @@
-# AI Spark Hub
+# Quasar x AI 2026
 
 Welcome to the official repository for **Quasar x AI 2026**, the web platform for the hackathon organized by **IIIT Ranchi** and **House of Geeks**, in collaboration with **AI Impact** and **Institution Innovation Council (IIC)**.
 
@@ -25,7 +25,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/AtulPandey25/ai-spark-hub.git
+    git clone https://github.com/Atharvjainn/Quasar
     ```
 2.  Navigate to the project directory:
     ```bash
