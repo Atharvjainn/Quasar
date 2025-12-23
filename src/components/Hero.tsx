@@ -14,7 +14,7 @@ const Hero = () => {
 
   // Countdown to hackathon start
   useEffect(() => {
-    const targetDate = new Date("2026-01-24T10:00:00");
+    const targetDate = new Date("2026-01-30T10:00:00");
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -87,7 +87,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground mb-8 animate-fade-in-up">
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-medium">
-              24-Hour AI Hackathon • January 24-25, 2026
+              24-Hour AI Hackathon • January 30-31, 2026
             </span>
           </div>
 
