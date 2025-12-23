@@ -7,7 +7,7 @@ const Organizers = () => {
           {/* Organized By */}
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-white/80 text-sm font-semibold uppercase tracking-wider">Organized By</h3>
-            <div className="flex flex-row items-center justify-center gap-8">
+            <div className="flex flex-row items-center justify-center gap-12">
             <img
               src="/images/IIITRanchi.jpg"
               alt="IIIT Ranchi"
@@ -47,7 +47,7 @@ const Organizers = () => {
         {/* Desktop: horizontal row with one cross */}
         <div className="hidden lg:flex items-start justify-center gap-16 lg:gap-24 flex-wrap">
           <div className="flex flex-col items-center gap-6">
-            <div className="flex items-center gap-12">
+            <div className="flex items-center gap-20">
               <img
                 src="/images/IIITRanchi.jpg"
                 alt="IIIT Ranchi"
