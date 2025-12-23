@@ -1,6 +1,11 @@
 # Quasar x AI 2026
 
+
+
+
 Welcome to the official repository for **Quasar x AI 2026**, the web platform for the hackathon organized by **IIIT Ranchi** and **House of Geeks**, in collaboration with **AI Impact** and **Institution Innovation Council (IIC)**.
+
+🌐 **Live Website:** [Quasar x AI 2026](https://quasarhacks.vercel.app/)
 
 ## 🚀 About The Project
 
@@ -29,7 +34,7 @@ To get a local copy up and running, follow these simple steps.
     ```
 2.  Navigate to the project directory:
     ```bash
-    cd ai-spark-hub
+    cd Quasar
     ```
 3.  Install dependencies:
     ```bash
@@ -47,7 +52,7 @@ To get a local copy up and running, follow these simple steps.
 A huge thanks to the developers who brought this project to life:
 
 *   **Atul Pandey** - [GitHub Profile](https://github.com/AtulPandey25)
-*   **Atharva Jain** - [GitHub Profile](https://github.com/Atharvjainn)
+*   **Atharv Jain** - [GitHub Profile](https://github.com/Atharvjainn)
 
 ## 📄 License
 
