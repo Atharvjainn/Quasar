@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Code,
     title: "24-Hour Sprint",
-    description: "Intense coding marathon from 10 AM Jan 24 to 10 AM Jan 25, 2026.",
+    description: "Intense coding marathon from 10 AM Jan 30 to 10 AM Jan 31, 2026.",
     color: "text-glow-secondary",
   },
   {
@@ -28,10 +28,10 @@ const highlights = [
 ];
 
 const stats = [
-  { icon: Users, value: "100+", label: "Students" },
+  { icon: Users, value: "200+", label: "Students" },
   { icon: Trophy, value: "₹15K", label: "Prize Pool" },
   { icon: Clock, value: "24", label: "Hours" },
-  { icon: Brain, value: "AI & Gen AI", label: "Theme" },
+  { icon: Brain, value: "AI for Economic Development and Social Good", label: "Theme" },
 ];
 
 const About = () => {
@@ -61,7 +61,11 @@ const About = () => {
               className="glass rounded-2xl p-6 text-center glow-border hover:scale-105 transition-transform"
             >
               <stat.icon className="w-8 h-8 mx-auto mb-3 text-primary" />
-              <div className="font-display text-3xl md:text-4xl font-bold text-gradient mb-1">
+              <div
+                className={`font-display font-bold text-gradient mb-1 ${
+                  stat.label === "Theme" ? "text-sm md:text-base leading-tight" : "text-3xl md:text-4xl"
+                }`}
+              >
                 {stat.value}
               </div>
               <div className="text-sm text-muted-foreground">{stat.label}</div>

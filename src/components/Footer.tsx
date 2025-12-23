@@ -71,7 +71,7 @@ const Footer = () => {
                 rel="noopener noreferrer" 
                 className="hover:text-foreground transition-colors underline"
               >
-                Atharva Jain
+                Atharv Jain
               </a>
             </p>
           </div>

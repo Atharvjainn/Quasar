@@ -18,7 +18,7 @@ const scheduleItems = [
     completed: false,
   },
   {
-    date: "Jan 24, 2026",
+    date: "Jan 30, 2026",
     title: "Hackathon Kickoff",
     description:
       "Opening ceremony, rules announcement, and 24-hour hacking begins!",
@@ -26,7 +26,7 @@ const scheduleItems = [
     completed: false,
   },
   {
-    date: "Jan 25, 2026",
+    date: "Jan 31, 2026",
     title: "Coding Ends",
     description:
       "Final project submissions - stop coding and prepare for demos.",
@@ -34,14 +34,14 @@ const scheduleItems = [
     completed: false,
   },
   {
-    date: "Jan 25, 2026",
+    date: "Jan 31, 2026",
     title: "Judgement",
     description: "Project presentations and judging by the panel.",
     time: "11:00 AM - 3:00 PM",
     completed: false,
   },
   {
-    date: "Jan 25, 2026",
+    date: "Jan 31, 2026",
     title: "Awards Ceremony",
     description:
       "Winners announcement and prize distribution. #LetsDiveIn",
@@ -116,7 +116,7 @@ const Schedule = () => {
           <div className="glass rounded-full px-6 py-3 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">
-              January 24-25, 2026
+              January 30-31, 2026
             </span>
           </div>
           <div className="glass rounded-full px-6 py-3 flex items-center gap-2">

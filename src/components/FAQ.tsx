@@ -19,7 +19,7 @@ const faqItems = [
   {
     question: "What are the rounds in this hackathon?",
     answer:
-      "Quasar x AI 2026 consists of two rounds. Round 1 (Jan 15-18, 2026) requires you to submit a PPT presentation of your project idea. Teams will be shortlisted based on their PPT submissions. Round 2 is the 24-hour final hackathon on January 24-25, 2026 at IIIT Ranchi Campus where shortlisted teams build their projects.",
+      "Quasar x AI 2026 consists of two rounds. Round 1 (Jan 15-18, 2026) requires you to submit a PPT presentation of your project idea. Teams will be shortlisted based on their PPT submissions. Round 2 is the 24-hour final hackathon on January 30-31, 2026 at IIIT Ranchi Campus where shortlisted teams build their projects.",
   },
   {
     question: "What should the Round 1 PPT contain?",
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Where will the final round take place?",
     answer:
-      "The final round (Round 2) will be held at IIIT Ranchi Campus on January 24-25, 2026. It's a 24-hour on-site hackathon!",
+      "The final round (Round 2) will be held at IIIT Ranchi Campus on January 30-31, 2026. It's a 24-hour on-site hackathon!",
   },
   {
     question: "Who can register for the hackathon?",
