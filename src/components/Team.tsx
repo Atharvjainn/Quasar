@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Atul Pandey",
     role: "Developer",
-    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/ap_p6khin.png",
+    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/aaaaaapppp_rzrzbk.jpg",
     instagram: "https://www.instagram.com/atull._.pandey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     linkedin: "https://www.linkedin.com/in/atull-pandeyy",
   },

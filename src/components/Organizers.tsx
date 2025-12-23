@@ -8,16 +8,20 @@ const Organizers = () => {
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-white/80 text-sm font-semibold uppercase tracking-wider">Organized By</h3>
             <div className="flex flex-row items-center justify-center gap-12">
-            <img
-              src="/images/IIITRanchi.jpg"
-              alt="IIIT Ranchi"
-              className="h-20 w-auto object-contain rounded-lg"
-            />
-            <img
-              src="/images/hg.png"
-              alt="HG"
-              className="h-20 w-auto object-contain rounded-lg"
-            />
+            <a href="https://iiitranchi.ac.in/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/IIITRanchi.jpg"
+                alt="IIIT Ranchi"
+                className="h-20 w-auto object-contain rounded-lg"
+              />
+            </a>
+            <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/hg.png"
+                alt="HG"
+                className="h-20 w-auto object-contain rounded-lg"
+              />
+            </a>
           </div>
           </div>
           {/* Cross Divider */}
@@ -31,16 +35,20 @@ const Organizers = () => {
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-white/80 text-sm font-semibold uppercase tracking-wider text-center">In Collaboration With</h3>
             <div className="flex flex-row items-center justify-center gap-4">
-            <img
-              src="/images/ai-impact-logo.png"
-              alt="AI Impact"
-              className="h-20 w-auto object-contain rounded-lg"
-            />
-            <img
-              src="/images/iic.png"
-              alt="IIC"
-              className="h-20 w-auto object-contain rounded-lg"
-            />
+            <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/ai-impact-logo.png"
+                alt="AI Impact"
+                className="h-20 w-auto object-contain rounded-lg"
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/images/iic.png"
+                alt="IIC"
+                className="h-20 w-auto object-contain rounded-lg"
+              />
+            </a>
           </div>
           </div>
         </div>
@@ -48,16 +56,20 @@ const Organizers = () => {
         <div className="hidden lg:flex items-start justify-center gap-16 lg:gap-24 flex-wrap">
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-20">
-              <img
-                src="/images/IIITRanchi.jpg"
-                alt="IIIT Ranchi"
-                className="h-28 lg:h-32 w-auto object-contain rounded-lg"
-              />
-              <img
-                src="/images/hg.png"
-                alt="HG"
-                className="h-28 lg:h-32 w-auto object-contain rounded-lg"
-              />
+              <a href="https://iiitranchi.ac.in/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/images/IIITRanchi.jpg"
+                  alt="IIIT Ranchi"
+                  className="h-28 lg:h-32 w-auto object-contain rounded-lg"
+                />
+              </a>
+              <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/images/hg.png"
+                  alt="HG"
+                  className="h-28 lg:h-32 w-auto object-contain rounded-lg"
+                />
+              </a>
             </div>
             <h3 className="text-white/80 text-lg font-semibold uppercase tracking-wider">Organized By</h3>
           </div>
@@ -67,16 +79,20 @@ const Organizers = () => {
           </div>
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-12">
-              <img
-                src="/images/ai-impact-logo.png"
-                alt="AI Impact"
-                className="h-28 lg:h-32 w-auto object-contain rounded-lg"
-              />
-              <img
-                src="/images/iic.png"
-                alt="IIC"
-                className="h-28 lg:h-32 w-auto object-contain rounded-lg"
-              />
+              <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/images/ai-impact-logo.png"
+                  alt="AI Impact"
+                  className="h-28 lg:h-32 w-auto object-contain rounded-lg"
+                />
+              </a>
+              <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/images/iic.png"
+                  alt="IIC"
+                  className="h-28 lg:h-32 w-auto object-contain rounded-lg"
+                />
+              </a>
             </div>
             <h3 className="text-white/80 text-lg font-semibold uppercase tracking-wider">In Collaboration With</h3>
           </div>
