@@ -28,6 +28,10 @@ const ProblemStatements = () => {
             </Link>
           ))}
         </div>
+
+        <div className="mt-6 text-center">
+          <p className="text-sm text-muted-foreground/90 animate-fade-in-up">✨ More problem statements are on the way — stay tuned!</p>
+        </div>
       </div>
     </div>
   );
