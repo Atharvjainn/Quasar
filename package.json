@@ -8,7 +8,8 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:ps-pdf": "node scripts/generate-problem-pdf.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -61,7 +62,8 @@
     "tailwindcss-animate": "^1.0.7",
     "tsparticles": "^3.9.1",
     "vaul": "^0.9.9",
-    "zod": "^3.25.76"
+    "zod": "^3.25.76",
+    "pdfkit": "^0.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,6 +12,7 @@ const Hero = () => {
   });
 
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const navigate = useNavigate();
 
   // Countdown to hackathon start
   useEffect(() => {
@@ -101,7 +103,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up">
-            Join 100+ students for 24 hours of building, learning, and pushing
+            Join 200+ students for 24 hours of building, learning, and pushing
             the boundaries of AI.
           </p>
 
@@ -123,14 +125,10 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() =>
-                document
-                  .querySelector("#about")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => navigate('/problem-statements')}
               className="px-8 py-6 text-lg border-border hover:bg-muted transition-all"
             >
-              Learn More
+              Problem Statements
             </Button>
           </div>
 
