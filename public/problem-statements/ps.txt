@@ -298,86 +298,43 @@ ETHICAL DISCLAIMER:
 "This system provides AI-assisted legal reasoning and argument drafts.
 Final legal advocacy rests with qualified legal professionals under
 Advocates Act, 1961. Not a substitute for lawyers or judges."
-===============================================================
-SD Wing
-1. Smart Attendance System (AI-Based)
-Problem Statement
-Traditional attendance systems are time-consuming, prone to proxy attendance, and require manual effort from instructors. There is a need for a secure, automated
-system that can reliably mark attendance while minimizing human intervention.
-Objective
-Design and develop an AI-powered attendance system that automatically marks attendance using face recognition or voice verification, ensuring accuracy and
-preventing fraudulent entries.
-Key Features:
-Student registration with biometric data
-AI-based identity verification (face or voice)
-Real-time attendance marking
-Attendance reports and analytics for faculty
-AI Integration
-Face recognition using computer vision models
-Voice authentication using speech embeddings
-Expected Outcome
-A scalable attendance solution that reduces manual workload, improves accuracy, and prevents proxy attendance.
-2. AI Chatbot for College Queries
-Problem Statement
-Students often face difficulty accessing accurate information related to college procedures such as exams, timetables, fees, and facilities due to limited office hours
-and delayed responses.
-Objective
-Build an AI chatbot that answers college-related queries in real time using natural language understanding.
-Key Features
-Natural language query handling
-FAQ and document-based responses
-Context-aware follow-up questions
-Admin panel to update information
-AI Integration
-NLP for intent detection and response generation
-Embedding-based search for accurate answers
-Expected Outcome
-A 24×7 intelligent assistant that improves student experience and reduces administrative workload.
-3. Hostel Complaint Tracking System
-Problem Statement
-Hostel residents often face delays in resolving maintenance and facility issues due to manual complaint processes and lack of transparency.
-Objective
-Create a digital platform for logging, tracking, and resolving hostel complaints efficiently.
-Key Features
-Complaint submission with category and priority
-Status tracking and notifications
-Admin dashboard for issue management
-Resolution time analytics
-AI Integration
-Automatic complaint categorization
-Priority prediction based on complaint history
-Expected Outcome
-A transparent and efficient complaint resolution system improving hostel living standards.
-4. Library Book Availability & Waitlist System
-Problem Statement
-Students frequently encounter unavailable library books with no clarity on return dates or waitlist status.
-Objective
-Build a digital library management system that shows real-time book availability, manages waitlists, and predicts return dates.
-Key Features
-Book inventory management
-Waitlist queue system
-Auto notifications for availability
-Admin control panel
-AI Integration
-Predict book return dates based on past usage
-Demand analysis for popular books
-Expected Outcome
-A smarter library experience with improved accessibility and reduced uncertainty.
-APP DEV problem
-5. statement
-AI Resume Builder & Analyzer Application
-Problem Statement
-In today’s competitive job market, a large percentage of resumes are rejected by Applicant Tracking Systems (ATS) before they ever reach a recruiter. Most job
-seekers lack visibility into why their resumes are rejected, which skills they are missing, or how to tailor their resumes for specific job roles. This results in repeated
-rejections despite having relevant capabilities.
-Objective
-Design and develop an AI-powered application that analyzes, scores, and optimizes resumes by comparing them against specific job descriptions, helping candidates
-improve their chances of shortlisting.
-Key Features
-Resume upload (PDF/DOC) and in-app resume builder
-Job description input or selection
-ATS compatibility score prediction
-Skill gap analysis between resume and job role
-AI-powered improvement suggestions
-Export optimized, ATS-friendly resume
-===============================================================
+
+===============================
+PS - 5
+STOCK MARKET ANALYZER
+===============================
+PROBLEM STATEMENT:
+Design an AI-driven Stock Market Analyzer that ingests market and alternative data, produces predictive signals, backtests strategies with realistic costs, and provides explainable insights for trading and research.
+
+BACKGROUND:
+Financial markets produce high-frequency, noisy time-series data and a wide range of alternative signals. Traders and researchers need tools that combine robust data pipelines, reliable models, and clear risk controls to generate actionable, explainable signals.
+
+CHALLENGE:
+Build a platform that:
+- Collects and normalizes market data (OHLCV, order book, fundamentals) and alternative signals (news sentiment, social metrics)
+- Engineers time-series features and trains predictive models for short-term returns or directional moves
+- Backtests strategies with slippage, transaction costs, and realistic execution constraints
+- Provides model explainability and monitoring for drift
+
+PART 1: DATA & SIGNALS
+Collect and version data sources: historical OHLCV, corporate fundamentals, news/sentiment, and social indicators. Deliver a signal catalog including momentum, volatility, mean-reversion, and sentiment indices.
+
+PART 2: FEATURE ENGINEERING & MODELING
+Generate features (technical indicators, rolling stats, lagged returns) and train models using time-aware validation (expanding window). Models may include XGBoost, LSTM/Transformer, or ensemble approaches. Include feature selection and regularization to prevent overfitting.
+
+PART 3: BACKTESTING & RISK MANAGEMENT
+Implement a backtest engine that models slippage, execution, and fees. Evaluate strategies using returns, Sharpe, drawdown, and turnover. Incorporate risk controls: position sizing, stop-loss, max drawdown limits, and scenario stress tests.
+
+PART 4: DEPLOYMENT, EXPLAINABILITY & MONITORING
+Provide SHAP/feature-importance explanations for model outputs and a dashboard showing signals, performance, and alerts. Monitor model drift and signal degradation and trigger retraining or human review when necessary.
+
+DELIVERABLES:
+1) Prototype: a functioning pipeline with data ingestion, signal generation, and backtesting on historical data.
+2) Code Repository: notebooks/scripts, requirements, and reproducible steps.
+3) Dashboard & Report: visualizations for signals, strategy performance, and an explanation of model decisions and risk measures.
+
+EVALUATION CRITERIA:
+- Out-of-sample robustness across market regimes
+- Risk-adjusted performance (Sharpe, drawdown) and realistic execution modeling
+- Explainability and reproducibility of results
+

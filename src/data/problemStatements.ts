@@ -216,6 +216,72 @@ const problems: ProblemStatement[] = [
         ]
       }
     ]
+  },
+  {
+    id: "5",
+    title: "Stock Market Analyzer",
+    short: "Build an AI-driven stock market analysis and prediction platform with data ingestion, modeling, backtesting, and explainability.",
+    sections: [
+      {
+        title: "Background",
+        content: [
+          "Financial markets generate high-volume time-series data; traders and researchers need tools that analyze, predict, and explain market movements in near real-time.",
+          "The challenge is to combine reliable data pipelines, robust feature engineering, and interpretable ML models to create actionable signals while managing risk and avoiding overfitting."
+        ]
+      },
+      {
+        title: "Challenge Overview",
+        content: [
+          "Design a system that ingests market data (prices, volumes, news, sentiment), builds predictive models for price movement or returns, backtests strategies, and provides explainable outputs and risk measures.",
+          "Use AI models responsibly with evaluation on realistic backtest frameworks and risk-aware decision making."
+        ]
+      },
+      {
+        title: "Part 1: Data & Signals",
+        content: [
+          "Collect and normalize data sources: OHLC price series, order book snapshots (if available), volumes, fundamental data, and alternative signals like news sentiment and social media indicators.",
+          "Deliver: a cleaned, versioned dataset and a signal catalog (momentum, mean-reversion, volatility, sentiment scores)."
+        ]
+      },
+      {
+        title: "Part 2: Feature Engineering & Modeling",
+        content: [
+          "Create features (technical indicators, rolling statistics, lagged returns, volatility measures) and train models to predict short-term returns or direction (classification/regression).",
+          "Model suggestions: gradient boosting (XGBoost), temporal models (LSTM/Transformer), or ensembling with tree-based models. Incorporate feature selection and cross-validation strategies appropriate for time series (e.g., expanding window)."
+        ]
+      },
+      {
+        title: "Part 3: Backtesting & Risk Management",
+        content: [
+          "Design a backtesting engine that simulates order execution, slippage, and transaction costs. Evaluate strategies using cumulative returns, Sharpe, drawdown, and turnover.",
+          "Include risk controls: position sizing, stop-loss, max drawdown constraints, and stress testing on historical market regimes."
+        ]
+      },
+      {
+        title: "Part 4: Explainability & Monitoring",
+        content: [
+          "Provide model interpretability (feature importance, SHAP explanations) and produce human-readable rationales for predictions and trade signals.",
+          "Implement live monitoring for model drift, signal degradation, and basic alerting when performance metrics decay."
+        ]
+      },
+      {
+        title: "Deliverables",
+        content: [
+          "1) Prototype: a working pipeline that ingests data, produces signals, and evaluates a simple strategy in backtest.",
+          "2) Code repo: notebooks/scripts, clear README, and instructions for reproducibility.",
+          "3) Dashboard: visualization for signals, backtest results, and model explanations.",
+          "4) Short report: methodology, evaluation, risk considerations, and limitations."
+        ]
+      },
+      {
+        title: "Evaluation Criteria",
+        content: [
+          "Prediction quality: out-of-sample performance and robustness across different market regimes.",
+          "Risk-adjusted returns: Sharpe, max drawdown, and tail risk analysis.",
+          "Reproducibility & clarity: documented pipeline, explainability, and reasonable runtime."
+        ]
+      }
+    ]
   }
 ];
 
