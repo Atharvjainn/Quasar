@@ -103,7 +103,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up">
-            Join 100+ students for 24 hours of building, learning, and pushing
+            Join 200+ students for 24 hours of building, learning, and pushing
             the boundaries of AI.
           </p>
 
