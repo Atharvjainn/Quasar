@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { NavLink } from "./NavLink";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -34,7 +35,7 @@ const Navbar = () => {
         isScrolled ? "glass shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative">
         <div className="flex items-center justify-between h-16 md:h-20 ">
           {/* Logo */}
           <a
@@ -59,6 +60,9 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
+            <NavLink to="/problem-statements" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Problem Statements
+            </NavLink>
             <Button
               onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-border"
@@ -90,6 +94,9 @@ const Navbar = () => {
                   {link.label}
                 </button>
               ))}
+              <NavLink to="/problem-statements" className="text-muted-foreground hover:text-foreground transition-colors font-medium text-left py-2">
+                Problem Statements
+              </NavLink>
               <Button
                 onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"

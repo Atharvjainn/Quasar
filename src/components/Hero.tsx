@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,6 +12,7 @@ const Hero = () => {
   });
 
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const navigate = useNavigate();
 
   // Countdown to hackathon start
   useEffect(() => {
@@ -123,14 +125,10 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() =>
-                document
-                  .querySelector("#about")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => navigate('/problem-statements')}
               className="px-8 py-6 text-lg border-border hover:bg-muted transition-all"
             >
-              Learn More
+              Problem Statements
             </Button>
           </div>
 
