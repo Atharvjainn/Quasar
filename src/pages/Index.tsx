@@ -8,12 +8,16 @@ import FAQ from "@/components/FAQ";
 import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
+
+
+
       <About />
       <Schedule />
       <Team />
