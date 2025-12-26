@@ -18,7 +18,10 @@ import { useToast } from "@/hooks/use-toast";
 const registrationSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters").max(100),
   email: z.string().email("Please enter a valid email").max(255),
-  teamSize: z.string().min(1, "Please select team size"),
+  teamSize: z.string().refine((val) => {
+    const n = parseInt(val, 10);
+    return !isNaN(n) && n >= 1 && n <= 5;
+  }, { message: "Team size must be between 1 and 5" }),
   track: z.string().min(1, "Please select a track"),
 });
 

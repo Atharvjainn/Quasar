@@ -9,12 +9,12 @@ const faqItems = [
   {
     question: "How many members can be in a team?",
     answer:
-      "Each team can have 2-4 members. Solo participation is not allowed as we encourage collaboration and teamwork.",
+      "Each team can have 1-5 members. Solo participation is allowed; we encourage collaboration but welcome solo participants too.",
   },
   {
     question: "Is there a registration fee?",
     answer:
-      "Yes, the registration fee is ₹500 per team (not per person). This covers participation for your entire team of 2-4 members.",
+      "Yes, the registration fee is ₹500 per team (not per person). This covers participation for your entire team of 1-5 members.",
   },
   {
     question: "What are the rounds in this hackathon?",
@@ -134,6 +134,21 @@ const FAQ = () => {
                   <p className="text-sm font-medium">houseofgeeks@iiitranchi.ac.in</p>
                 </div>
               </a>
+              {/* <a
+                href="mailto:houseofgeeks@iiitranchi.ac.in"
+                className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <p className="text-xs text-muted-foreground">Email</p>
+                  <p className="text-sm font-medium">houseofgeeks@iiitranchi.ac.in</p>
+                </div>
+              </a> */}
 
               {/* Phone 1 */}
               <a
@@ -169,7 +184,7 @@ const FAQ = () => {
 
               {/* Phone 3 */}
               <a
-                href="tel:+916394793164"
+                href="tel:+917829500988"
                 className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors group"
               >
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -179,7 +194,7 @@ const FAQ = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-xs text-muted-foreground">Phone</p>
-                  <p className="text-sm font-medium">+91 6394 793 164</p>
+                  <p className="text-sm font-medium">+91 7829500988</p>
                 </div>
               </a>
             </div>
