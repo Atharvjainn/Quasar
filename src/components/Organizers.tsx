@@ -53,7 +53,7 @@ const Organizers = () => {
           </div>
         </div>
         {/* Desktop: horizontal row with one cross */}
-        <div className="hidden lg:flex items-start justify-center gap-16 lg:gap-24 flex-wrap">
+        <div className="hidden lg:flex items-start mb-24 justify-center gap-16 lg:gap-24 flex-wrap">
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-20">
               <a href="https://iiitranchi.ac.in/" target="_blank" rel="noopener noreferrer">
@@ -97,6 +97,15 @@ const Organizers = () => {
             </div>
             <h3 className="text-white/80 text-lg font-semibold uppercase tracking-wider">In Collaboration With</h3>
           </div>
+        </div>
+
+        {/* Platform Partner (centered below organizers/collaborators) */}
+        <div className="max-w-5xl mx-auto mt-8 text-center">
+          <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/Unstop-Logo-Blue-Extra-Large-removebg-preview.png" alt="Unstop" className="h-16 mx-auto w-auto object-contain rounded-lg" />
+          </a>
+          <h3 className="text-white/80 text-sm font-semibold uppercase tracking-wider mt-5 mb-3">Platform Partner</h3>
+          
         </div>
       </div>
     </section>

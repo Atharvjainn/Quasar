@@ -27,6 +27,11 @@ const faqItems = [
       "Your PPT should include: your team details, problem statement, proposed AI-based solution, tech stack you plan to use, and expected outcomes. Selection for Round 2 will be based on the innovation, feasibility, and AI integration shown in your presentation.",
   },
   {
+    question: "What kind of problem statements can we submit?",
+    answer:
+      "You have complete freedom to choose a problem from any domain — web, mobile apps, AI, IoT,cyber and more. However, your solution must be aligned with our theme, ‘AI for Economic & Social Good,’ and clearly demonstrate the use of AI as a core component (models, data pipelines, inference, automation, etc.). Make sure to explain expected impact, datasets, and how AI is applied in your PPT.",
+  },
+  {
     question: "Where will the final round take place?",
     answer:
       "The final round (Round 2) will be held at IIIT Ranchi Campus on January 30-31, 2026. It's a 24-hour on-site hackathon!",

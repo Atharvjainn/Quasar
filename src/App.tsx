@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ProblemStatements from "./pages/ProblemStatements";
 import ProblemDetail from "./pages/ProblemDetail";
+import Overview from "./pages/Overview";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/overview" element={<Overview />} />
         {/* <Route path="/problem-statements" element={<ProblemStatements />} /> */}
         {/* <Route path="/problem-statements/:id" element={<ProblemDetail />} /> */}
         <Route path="*" element={<NotFound />} />
