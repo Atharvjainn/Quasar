@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -57,6 +57,21 @@ const Hero = () => {
 
   const openRegistration = () => {
     window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank");
+  };
+
+  const location = useLocation();
+
+  const scrollToAbout = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const el = document.querySelector("#about");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 200);
+    } else {
+      const el = document.querySelector("#about");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -125,10 +140,10 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => navigate('/problem-statements')}
+              onClick={scrollToAbout}
               className="px-8 py-6 text-lg border-border hover:bg-muted transition-all"
             >
-              Problem Statements
+              Learn more
             </Button>
           </div>
 

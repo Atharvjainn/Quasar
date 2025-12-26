@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { NavLink } from "./NavLink";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -71,10 +70,8 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
-              const isAbout = link.href === "#about";
-              const isOnPS = location.pathname.startsWith("/problem-statements");
-              const target = isAbout && isOnPS ? "/" : link.href;
-              const label = isAbout && isOnPS ? "Home" : link.label;
+              const target = link.href;
+              const label = link.label;
               return (
                 <button
                   key={link.href}
@@ -85,11 +82,6 @@ const Navbar = () => {
                 </button>
               );
             })}
-            {!location.pathname.startsWith("/problem-statements") && (
-              <NavLink to="/problem-statements" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-                Problem Statements
-              </NavLink>
-            )}
             <Button
               onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-border"
@@ -113,10 +105,8 @@ const Navbar = () => {
           <div className="md:hidden glass rounded-lg mt-2 p-4 animate-fade-in-up">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => {
-                const isAbout = link.href === "#about";
-                const isOnPS = location.pathname.startsWith("/problem-statements");
-                const target = isAbout && isOnPS ? "/" : link.href;
-                const label = isAbout && isOnPS ? "Home" : link.label;
+                const target = link.href;
+                const label = link.label;
                 return (
                   <button
                     key={link.href}
@@ -127,11 +117,6 @@ const Navbar = () => {
                   </button>
                 );
               })}
-              {!location.pathname.startsWith("/problem-statements") && (
-                <NavLink to="/problem-statements" className="text-muted-foreground hover:text-foreground transition-colors font-medium text-left py-2">
-                  Problem Statements
-                </NavLink>
-              )}
               <Button
                 onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"

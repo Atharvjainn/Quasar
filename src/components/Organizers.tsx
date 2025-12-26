@@ -15,10 +15,10 @@ const Organizers = () => {
                 className="h-20 w-auto object-contain rounded-lg"
               />
             </a>
-            <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/hg.png"
-                alt="HG"
+                src="/images/iic.png"
+                alt="IIC"
                 className="h-20 w-auto object-contain rounded-lg"
               />
             </a>
@@ -42,10 +42,10 @@ const Organizers = () => {
                 className="h-20 w-auto object-contain rounded-lg"
               />
             </a>
-            <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
+            <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
               <img
-                src="/images/iic.png"
-                alt="IIC"
+                src="/images/hg.png"
+                alt="HG"
                 className="h-20 w-auto object-contain rounded-lg"
               />
             </a>
@@ -63,13 +63,14 @@ const Organizers = () => {
                   className="h-28 lg:h-32 w-auto object-contain rounded-lg"
                 />
               </a>
-              <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="/images/hg.png"
-                  alt="HG"
+                  src="/images/iic.png"
+                  alt="IIC"
                   className="h-28 lg:h-32 w-auto object-contain rounded-lg"
                 />
               </a>
+              
             </div>
             <h3 className="text-white/80 text-lg font-semibold uppercase tracking-wider">Organized By</h3>
           </div>
@@ -86,10 +87,10 @@ const Organizers = () => {
                   className="h-28 lg:h-32 w-auto object-contain rounded-lg"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/institution-innovation-council-iiit-ranchi/" target="_blank" rel="noopener noreferrer">
+              <a href="https://houseofgeeks.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <img
-                  src="/images/iic.png"
-                  alt="IIC"
+                  src="/images/hg.png"
+                  alt="HG"
                   className="h-28 lg:h-32 w-auto object-contain rounded-lg"
                 />
               </a>
