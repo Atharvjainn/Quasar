@@ -3,14 +3,14 @@ import { Instagram, Linkedin } from "lucide-react";
 const teamMembers = [
   {
     name: "Devansh Khandelwal",
-    role: "Technical Head",
+    role: "Event Coordinator",
     image: "https://res.cloudinary.com/dlmfnwkon/image/upload/dk_fqpjkp.png",
     instagram: "https://www.instagram.com/devanshh__k?igsh=MTRoaGt5cjZweTF0bg==",
     linkedin: "https://www.linkedin.com/in/devansh-khandelwal-dek/",
   },
   {
     name: "Agnish Bhattacharya",
-    role: "Lead Organizer",
+    role: "Event Coordinator",
     image: "https://res.cloudinary.com/dlmfnwkon/image/upload/ab_zmycia.png",
     instagram: "https://www.instagram.com/_agnish16_?igsh=MTA4NXcxeWk3Z2tueg%3D%3D&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/agnish-bhattacharya-324031286/",
