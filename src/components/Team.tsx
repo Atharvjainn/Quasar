@@ -16,33 +16,47 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/agnish-bhattacharya-324031286/",
   },
   {
-    name: "Atul Pandey",
-    role: "Developer",
-    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/aaaaaapppp_rzrzbk.jpg",
-    instagram: "https://www.instagram.com/atull._.pandey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    linkedin: "https://www.linkedin.com/in/atull-pandeyy",
-  },
-  {
-    name: "Atharv Jain",
-    role: "Developer",
-    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/ajj_jnz8qo.jpg",
-    instagram: "https://www.instagram.com/atharvjain21",
-    linkedin: "https://www.linkedin.com/in/atharv-jain-2abb95324/",
-  },
-  {
-    name: "Pankaj Gupta",
+    name: "Anil Alok",
     role: "Event Coordinator",
-    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/pg_j0e0xz.jpg",
-    instagram: "https://www.instagram.com/pankaj_gupta_025/",
-    linkedin: "https://www.linkedin.com/in/pankaj-gupta-609971175",
+    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/v1766753218/Screenshot_2025-12-26_181254_u6qjkh.png",
+    instagram: "https://www.instagram.com/anilalok99?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    linkedin: "https://www.linkedin.com/in/anilalok/",
   },
   {
-    name: "Amitesh Anand",
+    name: "Umang Khandelwal",
     role: "Event Coordinator",
-    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/aa_h1uem1.png",
-    instagram: "https://www.instagram.com/_amiteshanand_?igsh=enV2MmpxbGgzemI2",
-    linkedin: "https://www.linkedin.com/in/amitesh-anand-b27208313/",
+    image: "https://res.cloudinary.com/dlmfnwkon/image/upload/IMG-20250918-WA0016_-_UMANG_KHANDELWAL_llxkqv.jpg",
+    instagram: "https://www.instagram.com/umang_0807/?utm_source=ig_web_button_share_sheet",
+    linkedin: "https://www.linkedin.com/in/umang-khandelwal-a47b26281/",
   },
+  // {
+  //   name: "Atul Pandey",
+  //   role: "Developer",
+  //   image: "https://res.cloudinary.com/dlmfnwkon/image/upload/aaaaaapppp_rzrzbk.jpg",
+  //   instagram: "https://www.instagram.com/atull._.pandey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  //   linkedin: "https://www.linkedin.com/in/atull-pandeyy",
+  // },
+  // {
+  //   name: "Atharv Jain",
+  //   role: "Developer",
+  //   image: "https://res.cloudinary.com/dlmfnwkon/image/upload/ajj_jnz8qo.jpg",
+  //   instagram: "https://www.instagram.com/atharvjain21",
+  //   linkedin: "https://www.linkedin.com/in/atharv-jain-2abb95324/",
+  // },
+  // {
+  //   name: "Pankaj Gupta",
+  //   role: "Event Coordinator",
+  //   image: "https://res.cloudinary.com/dlmfnwkon/image/upload/pg_j0e0xz.jpg",
+  //   instagram: "https://www.instagram.com/pankaj_gupta_025/",
+  //   linkedin: "https://www.linkedin.com/in/pankaj-gupta-609971175",
+  // },
+  // {
+  //   name: "Amitesh Anand",
+  //   role: "Event Coordinator",
+  //   image: "https://res.cloudinary.com/dlmfnwkon/image/upload/aa_h1uem1.png",
+  //   instagram: "https://www.instagram.com/_amiteshanand_?igsh=enV2MmpxbGgzemI2",
+  //   linkedin: "https://www.linkedin.com/in/amitesh-anand-b27208313/",
+  // },
 ];
 
 const Team = () => {
@@ -58,13 +72,43 @@ const Team = () => {
             Meet Our <span className="text-gradient">Team</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            The passionate individuals behind Quasar x AI 2026. Connect with us
-            on social media!
+            The passionate individuals behind Quasar x AI 2026.
           </p>
         </div>
 
+        {/* Faculty Coordinators */}
+        <div className="max-w-5xl mx-auto mb-12 text-center">
+          <h3 className="font-display text-2xl font-semibold mb-6">Faculty Coordinator</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            {[
+              { name: 'Dr. Dhiran Kumar Mahto', role: 'Faculty Coordinator', image: '/images/faculty/Faculty38.jpg' },
+              { name: 'Dr. Chandra Prakash Singh', role: 'Faculty Coordinator', image: '/images/faculty/Faculty37.jpg' },
+              { name: 'Dr. Abhinav Kumar', role: 'Faculty Coordinator', image: '/images/faculty/Faculty35.jpg' },
+              { name: 'Dr. Roshan Singh', role: 'Faculty Coordinator', image: '/images/faculty/Faculty33.jpg' },
+            ].slice().reverse().map((f) => (
+              <div key={f.image} className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 group">
+                {/* Avatar */}
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-muted glow-border group-hover:scale-110 transition-transform">
+                  <img src={f.image} alt={f.name} className="w-full h-full object-cover" />
+                </div>
+
+                {/* Info */}
+                <h3 className="font-display text-xl font-semibold mb-1">{f.name}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{f.role}</p>
+
+                {/* No social links for faculty by request */}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Student Coordinators */}
+        <div className="max-w-5xl mx-auto mb-12 text-center">
+          <h3 className="font-display text-2xl font-semibold mb-6">Student Coordinators</h3>
+        </div>
+
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member) => (
             <div
               key={member.name}

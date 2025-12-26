@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "/overview", label: "Overview" },
   { href: "#schedule", label: "Schedule" },
   
 ];
@@ -70,8 +71,18 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
-              const target = link.href;
-              const label = link.label;
+              const isOverviewRoute = location.pathname === "/overview";
+              // Hide the Overview link when already on the Overview page
+              if (isOverviewRoute && link.href === "/overview") return null;
+              let target = link.href;
+              let label = link.label;
+
+              // When on the overview page, 'About' should act as Home
+              if (link.href === "#about" && isOverviewRoute) {
+                target = "/";
+                label = "Home";
+              }
+
               return (
                 <button
                   key={link.href}
@@ -105,8 +116,14 @@ const Navbar = () => {
           <div className="md:hidden glass rounded-lg mt-2 p-4 animate-fade-in-up">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => {
-                const target = link.href;
-                const label = link.label;
+                const isOverviewRoute = location.pathname === "/overview";
+                if (isOverviewRoute && link.href === "/overview") return null;
+                let target = link.href;
+                let label = link.label;
+                if (link.href === "#about" && isOverviewRoute) {
+                  target = "/";
+                  label = "Home";
+                }
                 return (
                   <button
                     key={link.href}
