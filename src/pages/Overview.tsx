@@ -37,8 +37,8 @@ const Overview = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <a href={combinedPdf} target="_blank" rel="noreferrer" download>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3">Download Overview & Problem Statements </Button>
+            <a href={combinedPdf} target="_blank" rel="noreferrer" download className="w-full sm:w-auto overflow-hidden">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 sm:px-6 py-4 sm:py-3 w-full sm:w-auto break-words">Download Overview & Problem Statements</Button>
             </a>
           </div>
 
