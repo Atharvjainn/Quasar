@@ -3,7 +3,7 @@ import { Calendar, MapPin, CheckCircle } from "lucide-react";
 
 const scheduleItems = [
   {
-    date: "Jan 5-10, 2026",
+    date: "Until Jan 10, 2026",
     title: "Registration Period",
     description: "Sign up and secure your spot in Quasar x AI 2026.",
     time: "Open All Days",

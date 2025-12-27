@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: "What is the registration deadline?",
     answer:
-      "Registrations are open from January 5-10, 2026. Make sure to register before the deadline as spots are limited!",
+      "Registrations are open until January 10, 2026. Make sure to register before the deadline as spots are limited!",
   },
   {
     question: "Do I need prior AI/ML experience?",
