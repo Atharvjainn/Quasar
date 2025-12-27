@@ -157,14 +157,14 @@ doc.font('Helvetica').fontSize(11).text('Round 2 (Final): Top teams invited to t
 // Registration details
 doc.moveDown(0.5);
 header('Registration');
-doc.font('Helvetica').fontSize(11).text('Registration opens: January 5, 2026 – January 10, 2026.');
+doc.font('Helvetica').fontSize(11).text('Registration is open until January 10, 2026.');
 doc.font('Helvetica').fontSize(11).text('Registration link: https://unstop.com/p/quasar-x-ai-2026-indian-institute-of-information-technology-iiit-ranchi-1613293?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge');
 doc.font('Helvetica').fontSize(11).text('Registration fee: ₹500 per team. Team size: 1–5 members.');
 
 doc.moveDown(0.5);
 header('Schedule Highlights');
 doc.font('Helvetica').fontSize(11).list([
-  'Registration: Jan 5–10, 2026',
+  'Registration: Until Jan 10, 2026',
   'Round 1 submission (PPT & Video): Jan 15–18, 2026',
   'Round 2 Shortlisting Results announced: Jan 20, 2026',
   'Grand Finale (24-hour hackathon): Jan 30–31, 2026'

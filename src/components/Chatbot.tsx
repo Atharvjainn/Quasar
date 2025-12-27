@@ -10,14 +10,14 @@ interface Message {
 
 const faqResponses: Record<string, string> = {
   "when": "Quasar x AI 2026 has two rounds! Round 1 (PPT submission) is Jan 15-18, 2026. Round 2 (final) is a 24-hour hackathon on Jan 30-31, 2026 at IIIT Ranchi Campus.",
-  "date": "Round 1 PPT submission: Jan 15-18, 2026. Round 2 final: Jan 30-31, 2026 at IIIT Ranchi Campus. Registration: Jan 5-10, 2026.",
+  "date": "Round 1 PPT submission: Jan 15-18, 2026. Round 2 final: Jan 30-31, 2026 at IIIT Ranchi Campus. Registration: until Jan 10, 2026.",
   "where": "The final round takes place at IIIT Ranchi Campus on January 30-31, 2026. Round 1 is PPT submission online.",
   "venue": "The final hackathon (Round 2) will be held at IIIT Ranchi Campus on January 30-31, 2026. The event is hosted by IIIT Ranchi!",
   "location": "The final round is at IIIT Ranchi Campus. Round 1 is online PPT submission.",
   "iiit": "Quasar x AI 2026 is hosted by IIIT Ranchi! The final 24-hour hackathon takes place at IIIT Ranchi Campus on January 30-31, 2026.",
   "ranchi": "The hackathon is hosted by IIIT Ranchi! The final round takes place at IIIT Ranchi Campus.",
   "host": "Quasar x AI 2026 is proudly hosted by IIIT Ranchi! The final round will be held at their campus.",
-  "register": "You can register by scrolling down to the registration section. Registration is open from Jan 5-10, 2026. Fee is ₹500 per team.",
+  "register": "You can register by scrolling down to the registration section. Registration is open until Jan 10, 2026. Fee is ₹500 per team.",
   "sign up": "Scroll down to the registration section to sign up! Registration fee is ₹500 per team (1-5 members).",
   "cost": "The registration fee is ₹500 per team (not per person). Teams can have 1-5 members.",
   "fee": "The registration fee is ₹500 per team. This covers your entire team of 1-5 members.",
