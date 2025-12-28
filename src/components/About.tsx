@@ -41,11 +41,16 @@ const About = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/50 to-transparent" />
 
       <div className="container mx-auto px-4 relative z-10">
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-5xl sm:text-6xl font-bold mb-6">
             What is <span className="text-gradient">Quasar x AI 2026</span>?
           </h2>
+
+          <p className="mt-3 mb-2 text-base text-muted-foreground">
+            <span className="font-semibold text-foreground">Pre-summit event for <span className="text-green-400"> AI Impact Summit 2026</span></span>
+          </p>
           <p className="text-lg text-muted-foreground">
             A 24-hour AI innovation marathon hosted by <span className="font-semibold text-foreground">IIIT Ranchi</span> where students come together to build groundbreaking 
             AI-powered projects. Whether you're a seasoned developer or just starting your AI journey, 
