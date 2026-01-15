@@ -55,12 +55,6 @@ const Hero = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const openRegistration = () => {
-    window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank");
-  };
-
-
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
@@ -117,11 +111,10 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button
               size="lg"
-              onClick={openRegistration}
+              disabled
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
-              Register Now
-              <ArrowRight className="ml-2 w-5 h-5" />
+              Registrations closed
             </Button>
 
             <Button
