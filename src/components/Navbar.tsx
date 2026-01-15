@@ -93,12 +93,6 @@ const Navbar = () => {
                 </button>
               );
             })}
-            <Button
-              onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-border"
-            >
-              Register Now
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -134,12 +128,6 @@ const Navbar = () => {
                   </button>
                 );
               })}
-              <Button
-                onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
-                Register Now
-              </Button>
             </div>
           </div>
         )}

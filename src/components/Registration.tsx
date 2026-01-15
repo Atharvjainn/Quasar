@@ -92,18 +92,17 @@ const Registration = () => {
         {/* Registration Form */}
         <div className="max-w-lg mx-auto">
           <form
-            onSubmit={handleSubmit(onSubmit)}
             className="glass rounded-2xl p-8"
           >
             <div className="space-y-6">
               {/* Register Button */}
               <Button
                 type="button"
-                onClick={() => window.open("https://unstop.com/o/gyGNF78?utm_medium=Share&utm_source=houseofg77083&utm_campaign=Online_coding_challenge", "_blank")}
+                disabled
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <Rocket className="w-5 h-5 mr-2" />
-                Register Now
+                 Registrations Closed
               </Button>
             </div>
           </form>
